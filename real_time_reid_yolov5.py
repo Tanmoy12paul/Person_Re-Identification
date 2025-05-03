@@ -64,7 +64,7 @@ while True:
             top_score = sims[top_idx]  # Get similarity score
 
             # Decide if match is valid based on threshold
-            if top_score > 0.75:
+            if top_score > 0.80:
                 label = labels[top_idx]
                 print(f"✅[MATCH] Detected: {label} with confidence {top_score:.2f}")
                 color = (0, 255, 0)  # Green box for known identity
