@@ -10,7 +10,7 @@ from feature_extractor import get_model, extract_features  # Load ReID model & e
 from similarity import compute_cosine_similarity  # Compare embeddings using cosine similarity
 
 # === YOLOv5 Setup ===
-# Load YOLOv5s model locally (must clone yolov5 repo and install dependencies)
+# Load YOLOv5s model locally
 yolo_model = torch.hub.load('yolov5', 'yolov5s', source='local')
 yolo_model.conf = 0.5  # Set confidence threshold for detection
 yolo_model.classes = [0]  # Only detect class 0: person (from COCO dataset)
