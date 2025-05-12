@@ -70,7 +70,7 @@ while True:
                 color = (0, 255, 0)  # Green box for known identity
             else:
                 label = "Unknown"
-                print(f"❌[NO MATCH] Person not identified. Highest similarity: {top_score:.2f}")
+                print(f"❌[NO MATCH] Person not identified. Highest similarity with {label}: {top_score:.2f}")
                 color = (0, 0, 255)  # Red box for unknown
 
         except Exception as e:
